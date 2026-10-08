@@ -26,6 +26,12 @@
 		<tag/>
 		<url/>
 	</scm>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/techmkrajpoot/demoJavaApp</url>
+		</repository>
+	</distributionManagement>
 	<properties>
 		<java.version>17</java.version>
 		<aws.sdk.version>2.31.54</aws.sdk.version>
