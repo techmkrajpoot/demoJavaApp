@@ -4,8 +4,9 @@
 name: demoJavaApp
 
 on:
+  push:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   build:
