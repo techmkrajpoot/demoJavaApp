@@ -2,7 +2,7 @@ name: Deploy Spring Boot to EC2
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "master" ]
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build JAR
-        run: ./mvnw clean package -DskipTests
+        run: bash ./mvnw clean package -DskipTests
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
