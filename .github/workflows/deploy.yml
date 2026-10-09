@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: application-jar
-          path: target/demoJavaApp-0.0.1-SNAPSHOT.jar
+          path: target/demojavaapp-0.0.1-SNAPSHOT.jar
           if-no-files-found: error
 
   deploy:
@@ -56,7 +56,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           port: '22'
-          source: "demoJavaApp-0.0.1-SNAPSHOT.jar"
+          source: "demojavaapp-0.0.1-SNAPSHOT.jar"
           target: "~/"
 
       - name: Restart Spring Boot app
