@@ -14,7 +14,7 @@ public class MessageController {
 
 	@GetMapping
 	public Map<String, String> getMessage() {
-		return Map.of("message", "Hello from the GET API");
+		return Map.of("message", "Hello from the GET APIiiiiiii");
 	}
 
 	@PostMapping
