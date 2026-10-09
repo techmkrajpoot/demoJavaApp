@@ -8,7 +8,7 @@ public class DemoJavaAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoJavaAppApplication.class, args);
-		System.out.println("Hello, Last updated code till 11:20PM 8/10/2026 ");
+		System.out.println("Hello, Last updated code till 11:20PM 9/10/2026");
 	}
 
 }
